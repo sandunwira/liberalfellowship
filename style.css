@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+	--white: #FFFFFF;
+	--whiteGray: #F2F2F2;
+	--lightGray: #D9D9D9;
+	--gray: #808080;
+	--darkGray: #424242;
+	--blackGray: #141414;
+	--black: #000000;
+	--accent: #DF6B00;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "DM Sans", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	color: var(--blackGray);
+	background: var(--whiteGray);
+}
+
+.containerBlock {
+	height: auto;
+	width: 100%;
+}
+
+.container {
+	height: auto;
+	width: 90%;
+	padding: 50px 0;
+	gap: 40px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flexCol {
+	flex-direction: column;
+}
+
+.flexRow {
+	flex-direction: row;
+}
+
+.alignStart {
+	align-items: flex-start;
+}
+
+.alignCenter {
+	align-items: center;
+}
+
+.alignEnd {
+	align-items: flex-end;
+}
+
+.justifyStart {
+	justify-content: flex-start;
+}
+
+.justifyCenter {
+	justify-content: center;
+}
+
+.justifyEnd {
+	justify-content: flex-end;
+}
+
+.justifyBetween {
+	justify-content: space-between;
+}
+
+
+a {
+	text-decoration: none;
+	color: var(--black);
+	border-bottom: 2px solid var(--accent);
+}
+a:hover {
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent);
+}
+
+p {
+	line-height: 1.5;
+}
+
+
+button {
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.tWhiteBtn {
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: 1px solid var(--white);
+	color: var(--white);
+	background: #FFFFFF30;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.tWhiteBtn:hover {
+	background: #FFFFFF50;
+	transition: 0.2s;
+}
+
+.whiteBtn {
+	color: var(--black);
+	background: var(--white);
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.whiteBtn:hover {
+	color: var(--black);
+	border-bottom: none;
+	background: #FFFFFFD0;
+	transition: 0.2s;
+}
+
+.accentBtn {
+	color: var(--white);
+	background: var(--accent);
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.accentBtn:hover {
+	color: var(--white);
+	border-bottom: none;
+	background: #EE7302D0;
+	transition: 0.2s;
+}
+
+
+.navbar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: transparent;
+}
+
+.navbarContainer {
+	width: 90%;
+	padding: 25px 0;
+}
+
+.navLinks {
+	gap: 30px;
+}
+
+.navLink {
+	color: var(--white);
+	border-bottom: 2px solid transparent;
+	transition: 0.3s;
+}
+.navLink:hover {
+	color: var(--white);
+	border-bottom: 2px solid var(--white);
+	transition: 0.3s;
+}
+
+.socialLink {
+	border-bottom: none;
+}
+.socialLink:hover {
+	border-bottom: none;
+}
+
+.footerLinks {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.footerLink {
+	color: var(--white);
+	width: fit-content;
+	border-bottom: 2px solid transparent;
+	transition: 0.2s;
+}
+
+.footerLink:hover {
+	border-bottom: 2px solid var(--white);
+	transition: 0.2s;
+}
+
+.footerCopy {
+	width: calc(100% - 40px);
+	padding: 20px;
+	color: var(--white);
+	background: var(--black);
+}
+
+.cardsContainer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	background: var(--white);
+	box-shadow: 0px 0px 10px 0px transparent;
+	transition: 0.2s;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 30px 0px #00000020;
+	transition: 0.2s;
+}
+
+.cardContent a {
+	color: var(--black);
+	border-bottom: 2px solid var(--accent);
+	transition: 0.2s;
+}
+.cardContent a:hover {
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent);
+	transition: 0.2s;
+}
