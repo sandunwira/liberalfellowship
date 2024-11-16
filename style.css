@@ -218,14 +218,15 @@ button {
 
 .card {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	background: var(--white);
+	border: 0.5px solid var(--lightGray);
 	box-shadow: 0px 0px 10px 0px transparent;
 	transition: 0.2s;
 }
 
 .card:hover {
-	box-shadow: 0px 0px 30px 0px #00000020;
+	box-shadow: 0px 0px 30px 0px #00000010;
 	transition: 0.2s;
 }
 
