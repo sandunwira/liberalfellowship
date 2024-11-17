@@ -187,6 +187,11 @@ button {
 	border-bottom: none;
 }
 
+footer {
+	color: var(--white);
+	background: var(--blackGray);
+}
+
 .footerLinks {
 	width: 100%;
 	display: grid;

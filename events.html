@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Meta Tags Start =================================================================================-->
+	<meta name="title" content="Events - Liberal Fellowship">
+	<meta name="description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta name="keywords" content="">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Events - Liberal Fellowship">
+	<meta property="og:description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta property="og:image" content="">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="Events - Liberal Fellowship">
+	<meta name="twitter:description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta name="twitter:image" content="">
+	<!--=================================================================================== Meta Tags End -->
+
+	<title>Events - Liberal Fellowship</title>
+
+	<link rel="stylesheet" href="/style.css">
+	<script src="/script.js" defer></script>
+	<script src="/js/footer.js" defer></script>
+	<script src="/js/events.js" defer></script>
+
+	<link rel="icon" href="/assets/logo.png">
+
+	<!-- Preload CSS/JS -->
+	<link rel="preload" href="/style.css" as="style" type="text/css">
+	<link rel="preload" href="/script.js" as="script" type="text/javascript">
+	<!-- Preload Images -->
+	<link rel="preload" href="/assets/logo.png" as="image" type="image/png">
+	<!-- Prefetch HTML -->
+	<link rel="prefetch" href="/index.html" as="document">
+</head>
+
+<body>
+	<div class="navbar flex alignCenter justifyCenter" id="navigation">
+		<div class="navbarContainer flex alignCenter justifyBetween">
+			<a href="/" class="flex flexRow alignCenter" style="color: var(--white); border-bottom: none; gap: 10px;" id="navLogo">
+				<img src="/assets/logo-white.png" alt="Liberal Fellowship" id="navLogoImg">
+				<h1 style="font-size: 22px;">Liberal Fellowship</h1>
+			</a>
+
+			<nav class="navLinks flex alignCenter justifyCenter">
+				<a href="/projects.html" class="navLink">Projects</a>
+				<a href="/events.html" class="navLink">Events</a>
+				<a href="/about.html" class="navLink">About Us</a>
+				<a href="/contact.html" class="whiteBtn" id="actionBtn">Contact</a>
+			</nav>
+		</div>
+	</div>
+
+	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; margin-top: -87px; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
+		<div class="container flex flexCol alignCenter justifyCenter" style="gap: 30px;">
+			<span class="flex flexCol" style="width: 55vw; color: var(--white); gap: 20px;">
+				<h2 style="font-size: 55px; text-align: center;">Our Events</h2>
+				<p style="text-align: center;">All of our ongoing and upcoming events</p>
+			</span>
+		</div>
+	</header>
+
+	<div class="containerBlock flex alignCenter justifyCenter">
+		<div class="container flex flexCol alignCenter">
+			<div class="cardsContainer flex flexRow alignCenter justifyCenter" style="gap: 30px;" id="eventsContainer"></div>
+		</div>
+	</div>
+
+	<footer class="containerBlock flex flexCol alignCenter justifyCenter"></footer>
+</body>
+
+</html>
