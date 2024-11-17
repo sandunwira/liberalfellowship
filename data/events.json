@@ -1,0 +1,51 @@
+[
+	{
+		"title": "Event 1",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 1, 2024",
+		"location": "Colombo, Sri Lanka",
+		"time": "10:00 AM - 12:00 PM"
+	},
+	{
+		"title": "Event 2",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 2, 2024",
+		"location": "Kandy, Sri Lanka",
+		"time": "11:00 AM - 1:00 PM"
+	},
+	{
+		"title": "Event 3",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 3, 2024",
+		"location": "Galle, Sri Lanka",
+		"time": "12:00 PM - 2:00 PM"
+	},
+	{
+		"title": "Event 4",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 4, 2024",
+		"location": "Matara, Sri Lanka",
+		"time": "1:00 PM - 3:00 PM"
+	},
+	{
+		"title": "Event 5",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 5, 2024",
+		"location": "Anuradhapura, Sri Lanka",
+		"time": "2:00 PM - 4:00 PM"
+	},
+	{
+		"title": "Event 6",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 6, 2024",
+		"location": "Polonnaruwa, Sri Lanka",
+		"time": "3:00 PM - 5:00 PM"
+	},
+	{
+		"title": "Event 7",
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"date": "October 7, 2024",
+		"location": "Jaffna, Sri Lanka",
+		"time": "4:00 PM - 6:00 PM"
+	}
+]

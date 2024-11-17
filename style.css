@@ -161,6 +161,10 @@ button {
 	padding: 25px 0;
 }
 
+#navLogo img{
+	height: 35px;
+}
+
 .navLinks {
 	gap: 30px;
 }
@@ -186,7 +190,7 @@ button {
 .footerLinks {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 
@@ -198,6 +202,7 @@ button {
 }
 
 .footerLink:hover {
+	color: var(--white);
 	border-bottom: 2px solid var(--white);
 	transition: 0.2s;
 }
