@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					<img style="width: 100%; object-fit: cover; object-position: center; aspect-ratio: 4/3;" src="${project.image}" alt="${project.title}">
 
 					<div class="cardContent flex flexCol alignStart justifyStart" style="width: calc(100% - 40px); padding: 20px; gap: 15px;">
-						<h3><a href="${project.link}">${project.title}</a></h3>
+						<h3><a href="/projects/${project.id}.html">${project.title}</a></h3>
 						<span>
 							<p style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">${project.description}</p>
-							<a href="${project.link}" style="color: var(--accent); border-bottom: none;">read more</a>
+							<a href="/projects/${project.id}.html" style="color: var(--accent); border-bottom: none;">read more</a>
 						</span>
 					</div>
 				</div>

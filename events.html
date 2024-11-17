@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#DF6B00">
 
 	<!-- Meta Tags Start =================================================================================-->
 	<meta name="title" content="Events - Liberal Fellowship">
@@ -27,19 +28,28 @@
 	<title>Events - Liberal Fellowship</title>
 
 	<link rel="stylesheet" href="/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
 	<script src="/script.js" defer></script>
 	<script src="/js/footer.js" defer></script>
 	<script src="/js/events.js" defer></script>
 
 	<link rel="icon" href="/assets/logo.png">
 
-	<!-- Preload CSS/JS -->
+	<!-- Preload CSS / JS -->
 	<link rel="preload" href="/style.css" as="style" type="text/css">
 	<link rel="preload" href="/script.js" as="script" type="text/javascript">
+	<link rel="preload" href="/js/events.js" as="script" type="text/javascript">
 	<!-- Preload Images -->
 	<link rel="preload" href="/assets/logo.png" as="image" type="image/png">
-	<!-- Prefetch HTML -->
+	<link rel="preload" href="/assets/logo-white.png" as="image" type="image/png">
+	<link rel="preload" href="/assets/footer-logo.png" as="image" type="image/png">
+	<!-- Prefetch HTML / JSON -->
 	<link rel="prefetch" href="/index.html" as="document">
+	<link rel="prefetch" href="/data/events.json" as="document">
 </head>
 
 <body>
@@ -75,6 +85,15 @@
 	</div>
 
 	<footer class="containerBlock flex flexCol alignCenter justifyCenter"></footer>
+
+	<!-- SCROLL-TO-TOP START ===========================================================-->
+	<button id="toTopBtn" class="flex alignCenter justifyCenter">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+			<path d="M6 15l6 -6l6 6" />
+		</svg>
+	</button>
+	<!--============================================================= SCROLL-TO-TOP END -->
 </body>
 
 </html>

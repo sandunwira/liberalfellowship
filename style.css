@@ -250,3 +250,59 @@ footer {
 	border-bottom: 2px solid var(--accent);
 	transition: 0.2s;
 }
+
+.breadCrumbs a {
+	font-weight: 800;
+	color: var(--white);
+	border-bottom: 2px solid transparent;
+}
+.breadCrumbs a:hover {
+	color: var(--white);
+	border-bottom: 2px solid var(--white);
+}
+
+.projectSection {
+	width: 100%;
+	gap: 40px;
+}
+.projectSection h3 {
+	width: 100%;
+	text-align: center;
+}
+.projectSection a {
+	width: fit-content;
+}
+
+.projectPara {
+	width: 100%;
+	text-indent: 50px;
+	text-align: justify;
+	text-align-last: left;
+}
+
+ul {
+	margin-left: 20px;
+}
+ul li {
+	padding: 5px 0;
+}
+
+iframe {
+	border: 0.5px solid var(--gray);
+	border-radius: 5px;
+}
+
+#toTopBtn{
+	opacity: 0;
+	background: var(--accent);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 5;
+	font-size: 20px;
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	padding: 0;
+	transition: 0.2s;
+}
