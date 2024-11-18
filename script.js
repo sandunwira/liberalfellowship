@@ -1,4 +1,4 @@
-let maintenanceMode = true;
+let maintenanceMode = false;
 
 if (maintenanceMode) {
 	document.addEventListener("DOMContentLoaded", () => {
