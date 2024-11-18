@@ -1,0 +1,32 @@
+[
+	{
+		"name": "John Doe",
+		"position": "CEO",
+		"image": "/assets/images/members/default.png"
+	},
+	{
+		"name": "Jane Doe",
+		"position": "CTO",
+		"image": "/assets/images/members/default.png"
+	},
+	{
+		"name": "Jim Doe",
+		"position": "CFO",
+		"image": "/assets/images/members/default.png"
+	},
+	{
+		"name": "Jill Doe",
+		"position": "COO",
+		"image": "/assets/images/members/default.png"
+	},
+	{
+		"name": "Jack Doe",
+		"position": "CIO",
+		"image": "/assets/images/members/default.png"
+	},
+	{
+		"name": "Jenny Doe",
+		"position": "CMO",
+		"image": "/assets/images/members/default.png"
+	}
+]

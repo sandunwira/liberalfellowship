@@ -76,6 +76,11 @@ html {
 }
 
 
+h3 {
+	font-size: 28px;
+}
+
+
 a {
 	text-decoration: none;
 	color: var(--black);
@@ -87,6 +92,7 @@ a:hover {
 }
 
 p {
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -265,7 +271,7 @@ footer {
 	width: 100%;
 	gap: 40px;
 }
-.projectSection h3 {
+.projectSection h3, .projectSection h4, .projectSection h5, .projectSection h6 {
 	width: 100%;
 	text-align: center;
 }
@@ -284,6 +290,7 @@ ul {
 	margin-left: 20px;
 }
 ul li {
+	font-size: 18px;
 	padding: 5px 0;
 }
 
