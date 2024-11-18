@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					<div class="cardContent flex flexCol alignStart justifyStart" style="width: calc(100% - 40px); padding: 20px; gap: 15px;">
 						<h3 style="font-size: 20px;"><a href="/projects/${project.id}.html">${project.title}</a></h3>
 						<span>
-							<p style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">${project.description}</p>
+							<p style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 16px;">${project.description}</p>
 							<a href="/projects/${project.id}.html" style="color: var(--accent); border-bottom: none;">read more</a>
 						</span>
 					</div>
