@@ -34,6 +34,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 	<script src="/script.js" defer></script>
+	<script src="/js/navigation.js" defer></script>
 	<script src="/js/footer.js" defer></script>
 	<script src="/js/home/events.js" defer></script>
 	<script src="/js/home/projects.js" defer></script>
@@ -42,6 +43,7 @@
 
 	<!-- Preload CSS / JS -->
 	<link rel="preload" href="/style.css" as="style" type="text/css">
+	<link rel="preload" href="/js/navigation.js" as="script" type="text/javascript">
 	<link rel="preload" href="/script.js" as="script" type="text/javascript">
 	<!-- Preload Images -->
 	<link rel="preload" href="/assets/logo.png" as="image" type="image/png">
@@ -52,21 +54,7 @@
 </head>
 
 <body>
-	<div class="navbar flex alignCenter justifyCenter" id="navigation">
-		<div class="navbarContainer flex alignCenter justifyBetween">
-			<a href="/" class="flex flexRow alignCenter" style="color: var(--white); border-bottom: none; gap: 10px;" id="navLogo">
-				<img src="/assets/logo-white.png" alt="Liberal Fellowship" id="navLogoImg">
-				<h1 style="font-size: 22px;">Liberal Fellowship</h1>
-			</a>
-
-			<nav class="navLinks flex alignCenter justifyCenter">
-				<a href="/projects.html" class="navLink">Projects</a>
-				<a href="/events.html" class="navLink">Events</a>
-				<a href="/about.html" class="navLink">About Us</a>
-				<a href="/contact.html" class="whiteBtn" id="actionBtn">Contact</a>
-			</nav>
-		</div>
-	</div>
+	<div class="navbar flex alignCenter justifyCenter" id="navigation"></div>
 
 	<header class="containerBlock flex alignCenter justifyCenter" style="height: 100vh; margin-top: -87px; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
 		<div class="container flex flexCol alignStart justifyCenter" style="gap: 30px; margin-top: 87px;">
