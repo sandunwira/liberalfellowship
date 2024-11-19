@@ -41,7 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.getElementById("navigation").style.transition = "0.3s";
 
 			document.querySelectorAll(".navLink").forEach((link) => {
-				link.style.color = "var(--black)";
+				if (window.innerWidth < 1024) {
+					link.style.color = "var(--white)";
+				} else {
+					link.style.color = "var(--black)";
+				}
 			});
 
 			document.getElementById("actionBtn").classList.remove("whiteBtn");
@@ -57,7 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.getElementById("navigation").style.transition = "0.3s";
 
 			document.querySelectorAll(".navLink").forEach((link) => {
-				link.style.color = "var(--white)";
+				if (window.innerWidth < 1024) {
+					link.style.color = "var(--white)";
+				} else {
+					link.style.color = "var(--white)";
+				}
 			});
 
 			document.getElementById("actionBtn").classList.remove("accentBtn");
@@ -89,7 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
 function scrollToOurWorks() {
 	const bodyRect = document.body.getBoundingClientRect().top;
 	const sectionRect = document.getElementById('ourWorkSection').getBoundingClientRect().top;
-	const offsetPosition = (sectionRect - bodyRect) - 86;
+
+	let menuSize;
+
+	if (window.innerWidth < 1024) {
+		menuSize = 81;
+	} else if (window.innerWidth > 1024) {
+		menuSize = 87;
+	}
+
+	const offsetPosition = (sectionRect - bodyRect) - menuSize;
 
 	window.scrollTo({ top: offsetPosition });
 }

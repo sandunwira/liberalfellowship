@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				navLink.href = page.link;
 				navLink.className = "navLink";
 				navLink.textContent = page.name;
+				navLink.style.color = "var(--white)";
 				dropdownContent.appendChild(navLink);
 			});
 
