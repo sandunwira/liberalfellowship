@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#DF6B00">
+
+	<!-- Meta Tags Start =================================================================================-->
+	<meta name="title" content="Gallery - Liberal Fellowship">
+	<meta name="description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta name="keywords" content="">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Gallery - Liberal Fellowship">
+	<meta property="og:description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta property="og:image" content="">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="Gallery - Liberal Fellowship">
+	<meta name="twitter:description" content="Liberal Fellowship is a youth movement dedicated to creating a just and equitable society while ensuring individual freedoms and rights for all.">
+	<meta name="twitter:image" content="">
+	<!--=================================================================================== Meta Tags End -->
+
+	<title>Gallery - Liberal Fellowship</title>
+
+	<link rel="stylesheet" href="/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+	<script src="/script.js" defer></script>
+	<script src="/js/navigation.js" defer></script>
+	<script src="/js/footer.js" defer></script>
+	<script src="/js/gallery.js" defer></script>
+
+	<link rel="icon" href="/assets/logo.png">
+
+	<!-- Preload CSS / JS -->
+	<link rel="preload" href="/style.css" as="style" type="text/css">
+	<link rel="preload" href="/js/navigation.js" as="script" type="text/javascript">
+	<link rel="preload" href="/script.js" as="script" type="text/javascript">
+	<link rel="preload" href="/js/gallery.js" as="script" type="text/javascript">
+	<!-- Preload Images -->
+	<link rel="preload" href="/assets/logo.png" as="image" type="image/png">
+	<link rel="preload" href="/assets/logo-white.png" as="image" type="image/png">
+	<link rel="preload" href="/assets/footer-logo.png" as="image" type="image/png">
+	<!-- Prefetch HTML / JSON -->
+	<link rel="prefetch" href="/index.html" as="document">
+	<link rel="prefetch" href="/data/gallery.json" as="document">
+</head>
+
+<body>
+	<div class="navbar flex alignCenter justifyCenter" id="navigation"></div>
+
+	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; margin-top: -87px; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
+		<div class="container flex flexCol alignCenter justifyCenter" style="gap: 30px;">
+			<span class="flex flexCol" style="width: 55vw; color: var(--white); gap: 20px;">
+				<h2 style="font-size: 55px; text-align: center;">Gallery</h2>
+				<p style="text-align: center;">Our gallery of images from various events and activities.</p>
+			</span>
+		</div>
+	</header>
+
+	<div class="containerBlock flex alignCenter justifyCenter">
+		<div class="container flex flexCol alignCenter">
+			<div class="cardsContainer flex flexRow alignCenter justifyCenter" style="grid-template-columns: repeat(5, 1fr); gap: 30px;" id="galleryContainer"></div>
+		</div>
+	</div>
+
+	<footer class="containerBlock flex flexCol alignCenter justifyCenter"></footer>
+
+	<!-- SCROLL-TO-TOP START ===========================================================-->
+	<button id="toTopBtn" class="flex alignCenter justifyCenter">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+			<path d="M6 15l6 -6l6 6" />
+		</svg>
+	</button>
+	<!--============================================================= SCROLL-TO-TOP END -->
+</body>
+
+</html>

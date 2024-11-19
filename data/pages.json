@@ -12,6 +12,10 @@
 		"link": "/events.html"
 	},
 	{
+		"name": "Gallery",
+		"link": "/gallery.html"
+	},
+	{
 		"name": "About",
 		"link": "/about.html"
 	},
