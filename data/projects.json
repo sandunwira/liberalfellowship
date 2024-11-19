@@ -2,21 +2,25 @@
 	{
 		"id": 1,
 		"title": "Project 1",
-		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"description": "Lorem ipsum dolor sit amet sociosqu convallis hac felis fames praesent enim tortor morbi rhoncus natoque cursus vestibulum placerat est velit blandit quam proin ornare molestie luctus orci nisi cras si iaculis mi nisl tempus arcu scelerisque nibh aliquet venenatis facilisi tellus vel tempor consequat suscipit aptent rutrum mollis bibendum"
 	},
 	{
 		"id": 2,
 		"title": "Project 2",
-		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"description": "Lorem ipsum dolor sit amet sociosqu convallis hac felis fames praesent enim tortor morbi rhoncus natoque cursus vestibulum placerat est velit blandit quam proin ornare molestie luctus orci nisi cras si iaculis mi nisl tempus arcu scelerisque nibh aliquet venenatis facilisi tellus vel tempor consequat suscipit aptent rutrum mollis bibendum"
 	},
 	{
 		"id": 3,
 		"title": "Project 3",
-		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"description": "Lorem ipsum dolor sit amet sociosqu convallis hac felis fames praesent enim tortor morbi rhoncus natoque cursus vestibulum placerat est velit blandit quam proin ornare molestie luctus orci nisi cras si iaculis mi nisl tempus arcu scelerisque nibh aliquet venenatis facilisi tellus vel tempor consequat suscipit aptent rutrum mollis bibendum"
 	},
 	{
 		"id": 4,
 		"title": "Project 4",
-		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		"image": "https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"description": "Lorem ipsum dolor sit amet sociosqu convallis hac felis fames praesent enim tortor morbi rhoncus natoque cursus vestibulum placerat est velit blandit quam proin ornare molestie luctus orci nisi cras si iaculis mi nisl tempus arcu scelerisque nibh aliquet venenatis facilisi tellus vel tempor consequat suscipit aptent rutrum mollis bibendum"
 	}
 ]
