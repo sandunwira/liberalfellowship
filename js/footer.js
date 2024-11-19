@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		}).join('');
 
 		footer.innerHTML = `
-			<div class="container flex flexRow">
-				<div class="flex flexCol alignStart justifyStart" style="width: 35%; gap: 30px;">
+			<div class="container flex flexRow m-flexCol">
+				<div class="flex flexCol alignStart justifyStart m-alignCenter width-35 m-width-100" style="gap: 30px;">
 					<a href="/" style="border-bottom: none;" id="footerLogo">
 						<img src="/assets/footer-logo.png" style="height: 110px;" alt="Liberal Fellowship" id="footerLogoImg">
 					</a>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					</div>
 				</div>
 
-				<div class="flex flexCol alignStart justifyStart" style="width: 50%; gap: 30px;">
+				<div class="flex flexCol alignStart justifyStart width-50 m-width-100" style="gap: 30px;">
 					<h2>Quick Links</h2>
 
 					<nav class="footerLinks">

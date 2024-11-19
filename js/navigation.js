@@ -1,26 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-	fetch("/data/pages.json")
-		.then((response) => response.json())
-		.then((pages) => {
-			const navigation = document.getElementById("navigation");
-			const navbarContainer = document.createElement("div");
-			navbarContainer.className = "navbarContainer flex alignCenter justifyBetween";
+	function createNavigationLinks(container, pages, isMobile = false) {
+		const logoLink = document.createElement("a");
+		logoLink.href = pages[0].link;
+		logoLink.className = "flex flexRow alignCenter";
+		logoLink.style.color = "var(--white)";
+		logoLink.style.borderBottom = "none";
+		logoLink.style.gap = "10px";
+		logoLink.id = "navLogo";
+		logoLink.innerHTML = `
+            <img src="/assets/logo-white.png" alt="Liberal Fellowship" id="navLogoImg">
+            <h1 style="font-size: 22px;">Liberal Fellowship</h1>
+        `;
+		container.appendChild(logoLink);
 
-			// Create logo link
-			const logoLink = document.createElement("a");
-			logoLink.href = pages[0].link;
-			logoLink.className = "flex flexRow alignCenter";
-			logoLink.style.color = "var(--white)";
-			logoLink.style.borderBottom = "none";
-			logoLink.style.gap = "10px";
-			logoLink.id = "navLogo";
-			logoLink.innerHTML = `
-                <img src="/assets/logo-white.png" alt="Liberal Fellowship" id="navLogoImg">
-                <h1 style="font-size: 22px;">Liberal Fellowship</h1>
-            `;
-			navbarContainer.appendChild(logoLink);
+		if (isMobile) {
+			const dropdownButton = document.createElement("button");
+			dropdownButton.className = "dropdownButton";
+			dropdownButton.textContent = "Menu";
+			container.appendChild(dropdownButton);
 
-			// Create nav links
+			const dropdownContent = document.createElement("div");
+			dropdownContent.className = "dropdownContent";
+
+			pages.slice(1).forEach(page => {
+				const navLink = document.createElement("a");
+				navLink.href = page.link;
+				navLink.className = "navLink";
+				navLink.textContent = page.name;
+				dropdownContent.appendChild(navLink);
+			});
+
+			container.appendChild(dropdownContent);
+
+			dropdownButton.addEventListener("click", () => {
+				dropdownContent.classList.toggle("show");
+			});
+		} else {
 			const navLinks = document.createElement("nav");
 			navLinks.className = "navLinks flex alignCenter justifyCenter";
 
@@ -32,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				navLinks.appendChild(navLink);
 			});
 
-			// Create action button
 			const actionButton = document.createElement("a");
 			actionButton.href = pages[pages.length - 1].link;
 			actionButton.className = "whiteBtn";
@@ -40,7 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
 			actionButton.textContent = pages[pages.length - 1].name;
 			navLinks.appendChild(actionButton);
 
-			navbarContainer.appendChild(navLinks);
-			navigation.appendChild(navbarContainer);
+			container.appendChild(navLinks);
+		}
+	}
+
+	fetch("/data/pages.json")
+		.then(response => response.json())
+		.then(pages => {
+			const desktopNavigation = document.getElementById("navigation");
+			const mobileNavigation = document.getElementById("mobile-navigation");
+
+			const desktopContainer = document.createElement("div");
+			desktopContainer.className = "navbarContainer flex alignCenter justifyBetween";
+			createNavigationLinks(desktopContainer, pages);
+			desktopNavigation.appendChild(desktopContainer);
+
+			const mobileContainer = document.createElement("div");
+			mobileContainer.className = "navbarContainer flex alignCenter justifyBetween";
+			createNavigationLinks(mobileContainer, pages, true);
+			mobileNavigation.appendChild(mobileContainer);
 		});
 });

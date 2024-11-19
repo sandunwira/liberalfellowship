@@ -344,6 +344,33 @@ iframe {
 	transition: 0.2s;
 }
 
+
+.gridCol-1 {
+	grid-template-columns: repeat(1, 1fr);
+}
+.gridCol-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.gridCol-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.gridCol-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.gridCol-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+#navigation {
+    display: flex;
+}
+
+#mobile-navigation {
+    display: none;
+}
+
+
+
 .spinner {
 	animation: spinner 1s linear infinite;
 }
@@ -355,4 +382,140 @@ iframe {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.width-25 {
+	width: 25%;
+}
+.width-35 {
+	width: 35%;
+}
+.width-50 {
+	width: 50%;
+}
+
+.heroContainer {
+	width: 55vw;
+}
+
+.heroContainer h2 {
+	font-size: 55px;
+}
+
+header {
+	margin-top: -87px;
+}
+header h2 {
+	font-size: 55px;
+}
+header .container {
+	margin-top: 87px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+	header {
+		margin-top: 0;
+	}
+	header h2 {
+		font-size: 40px;
+	}
+	header .container {
+		margin-top: 0;
+	}
+
+	.m-alignCenter {
+		align-items: center;
+	}
+
+	.heroContainer {
+		width: 100%;
+	}
+	.heroContainer h2 {
+		font-size: 40px;
+	}
+
+	.navbarContainer {
+		padding: 20px 0;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+	.m-flexCol {
+		flex-direction: column;
+	}
+	.m-flexRow {
+		flex-direction: row;
+	}
+
+	.m-width-100 {
+		width: 100%;
+	}
+
+	.m-aspect4-3 {
+		aspect-ratio: 4/3;
+	}
+
+	.m-gridCol-1 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.m-gridCol-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.m-gridCol-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.m-gridCol-4 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.m-gridCol-5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	#navigation {
+        display: none;
+    }
+
+    #mobile-navigation {
+        display: flex;
+		background: var(--accent);
+    }
+
+	.dropdownButton {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdownContent {
+        display: none;
+        flex-direction: column;
+		position: absolute;
+		background: var(--accent);
+		width: 100%;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		left: 0;
+		top: 81px;
+    }
+
+    .dropdownContent a {
+        color: var(--black);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdownContent a:hover {
+        background-color: var(--light-gray);
+    }
+
+    .show {
+        display: flex;
+    }
 }

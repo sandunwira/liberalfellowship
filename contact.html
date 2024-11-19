@@ -28,6 +28,7 @@
 	<title>Contact - Liberal Fellowship</title>
 
 	<link rel="stylesheet" href="/style.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -55,11 +56,12 @@
 
 <body>
 	<div class="navbar flex alignCenter justifyCenter" id="navigation"></div>
+	<div class="navbar flex alignCenter justifyCenter" id="mobile-navigation"></div>
 
-	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; margin-top: -87px; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
+	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
 		<div class="container flex flexCol alignCenter justifyCenter" style="gap: 30px;">
 			<span class="flex flexCol" style="width: 55vw; color: var(--white); gap: 20px;">
-				<h2 style="font-size: 55px; text-align: center;">Contact Us</h2>
+				<h2 style="text-align: center;">Contact Us</h2>
 				<p style="text-align: center;">All of our available contact information</p>
 			</span>
 		</div>
@@ -69,7 +71,7 @@
 		<div class="container flex flexCol alignCenter">
 			<h3>Send Us a Message</h3>
 
-			<form class="flex flexCol alignCenter justifyCenter" style="width: 50%; gap: 20px;" id="contactForm" action="https://script.google.com/macros/s/AKfycbzynScsMOHbd1JmXJl0HZZ7v6E5yh5ukzrMeL-JFB98YD1VmSbeyYFPWSEi-ucRPpJx/exec" method="POST">
+			<form class="flex flexCol alignCenter justifyCenter width-50 m-width-100" style="gap: 20px;" id="contactForm" action="https://script.google.com/macros/s/AKfycbzynScsMOHbd1JmXJl0HZZ7v6E5yh5ukzrMeL-JFB98YD1VmSbeyYFPWSEi-ucRPpJx/exec" method="POST">
 				<span class="flex flexCol" style="width: 100%; gap: 10px;">
 					<label for="name">Full Name:</label>
 					<input type="text" name="Full Name" class="formField" id="contactFormName" placeholder="Full Name" required>
@@ -143,7 +145,7 @@
 		<div class="container flex flexCol alignCenter">
 			<h3>Connect with Us</h3>
 
-			<div class="cardsContainer flex flexRow alignCenter justifyCenter" style="grid-template-columns: repeat(3, 1fr); gap: 30px;" id="contactsContainer"></div>
+			<div class="cardsContainer flex flexRow alignCenter justifyCenter gridCol-3 m-gridCol-1" style="gap: 30px;" id="contactsContainer"></div>
 		</div>
 	</div>
 

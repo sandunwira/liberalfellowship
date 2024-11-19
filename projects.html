@@ -28,6 +28,7 @@
 	<title>Projects - Liberal Fellowship</title>
 
 	<link rel="stylesheet" href="/style.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -55,11 +56,12 @@
 
 <body>
 	<div class="navbar flex alignCenter justifyCenter" id="navigation"></div>
+	<div class="navbar flex alignCenter justifyCenter" id="mobile-navigation"></div>
 
-	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; margin-top: -87px; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
+	<header class="containerBlock flex alignCenter justifyCenter" style="height: 60vh; background: linear-gradient(30deg, #492300f0, #a04e01e0, #ee740230), url('https://images.pexels.com/photos/8349235/pexels-photo-8349235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
 		<div class="container flex flexCol alignCenter justifyCenter" style="gap: 30px;">
 			<span class="flex flexCol" style="width: 55vw; color: var(--white); gap: 20px;">
-				<h2 style="font-size: 55px; text-align: center;">Our Projects</h2>
+				<h2 style="text-align: center;">Our Projects</h2>
 				<p style="text-align: center;">All of our ongoing and upcoming projects</p>
 			</span>
 		</div>
@@ -67,7 +69,7 @@
 
 	<div class="containerBlock flex alignCenter justifyCenter">
 		<div class="container flex flexCol alignCenter">
-			<div class="cardsContainer flex flexRow alignCenter justifyCenter" style="gap: 30px;" id="projectsContainer"></div>
+			<div class="cardsContainer flex flexRow alignCenter justifyCenter gridCol-4 m-gridCol-1" style="gap: 30px;" id="projectsContainer"></div>
 		</div>
 	</div>
 
